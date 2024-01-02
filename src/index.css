@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* custom style */
+@layer components{
+   .myContainer{
+    @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px]
+   }
+}
+@font-face {   
+   font-family: 'Akira'; /* Use the same name defined in your Tailwind config */
+   src: url('./assets/fonts/Akira.otf'); /* Path to your font file */
+     
+ }
+ @font-face {
+  font-family: 'Boldstorm' ;
+  src: url('./assets/fonts/Boldstrom.otf');
+}
+ @font-face {
+   font-family: 'Poppins-E' ;
+   src: url('./assets/fonts/Poppins-ExtraLight.ttf');
+ }
+ @font-face {
+  font-family: 'Poppins-R' ;
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
