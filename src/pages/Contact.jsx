@@ -20,16 +20,15 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     if (
-      !inputvalueName &&
-      !inputvalueEmail &&
-      !inputvaluePhone &&
+      !inputvalueName ||
+      !inputvalueEmail ||
+      !inputvaluePhone ||
       !inputvalueMessage
     ) {
       return;
     }
 
     setLoading(true);
-    
 
     emailjs
       .sendForm("service_qo02ruh", "template_yze6qwg", form.current, {
@@ -43,7 +42,7 @@ const Contact = () => {
           setInputvaluePhone("");
           setInputvalueMessage("");
           setLoading(false);
-          alert('message send')
+          alert("message send");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -145,7 +144,6 @@ const Contact = () => {
                 ) : (
                   "Send Massage"
                 )}{" "}
-                
               </button>
             </div>
           </form>
