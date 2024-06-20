@@ -18,6 +18,7 @@ const Contact = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const sendEmail = (e) => {
+    e.preventDefault();
     if (
       !inputvalueName &&
       !inputvalueEmail &&
@@ -28,7 +29,7 @@ const Contact = () => {
     }
 
     setLoading(true);
-    e.preventDefault();
+    
 
     emailjs
       .sendForm("service_qo02ruh", "template_yze6qwg", form.current, {
