@@ -2,25 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 /* custom style */
-@layer components{
-   .myContainer{
-    @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px]
-   }
+@layer components {
+  .myContainer {
+    @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
+  }
 }
-@font-face {   
-   font-family: 'Akira'; /* Use the same name defined in your Tailwind config */
-   src: url('./assets/fonts/Akira.otf'); /* Path to your font file */
-     
- }
- @font-face {
-  font-family: 'Boldstorm' ;
-  src: url('./assets/fonts/Boldstrom.otf');
+@font-face {
+  font-family: "Akira"; /* Use the same name defined in your Tailwind config */
+  src: url("./assets/fonts/Akira.otf"); /* Path to your font file */
 }
- @font-face {
-   font-family: 'Poppins-E' ;
-   src: url('./assets/fonts/Poppins-ExtraLight.ttf');
- }
- @font-face {
-  font-family: 'Poppins-R' ;
-  src: url('./assets/fonts/Poppins-Regular.ttf');
+@font-face {
+  font-family: "Boldstorm";
+  src: url("./assets/fonts/Boldstrom.otf");
 }
+@font-face {
+  font-family: "Poppins-E";
+  src: url("./assets/fonts/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Poppins-R";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Brush";
+  src: url("./assets/fonts/brush.ttf");
+}
+@font-face {
+  font-family: "Sign";
+  src: url("./assets/fonts/Signerella.ttf");
+}
+@font-face {
+  font-family: "Vogue";
+  src: url("./assets/fonts/Vogue.ttf");
+}
+@font-face {
+  font-family: "KOLAK";
+  src: url("./assets/fonts/KOLAK.ttf");
+}
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.strok {
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #fdf7e4;
+}
+
+
+ /* @media (min-width: 640px and max-width: 767px) { 
+
+  @layer components {
+    .myContainer {
+      @apply w-[100%] ms-auto me-auto ps-[20px] pe-[20px];
+    }
+  }
+  
+  }
+
+ @media (min-width: 768px and max-width: 1023px) { 
+
+  @layer components {
+    .myContainer {
+      @apply w-[100%] ms-auto me-auto ps-[20px] pe-[20px];
+    }
+  }
+  
+  }
+
+
+ @media (min-width: 1024px and max-width: 1279px) { 
+
+  @layer components {
+    .myContainer {
+      @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
+    }
+  }
+  
+  }
+
+
+ @media (min-width: 1280px and max-width: 1535px) { 
+
+  @layer components {
+    .myContainer {
+      @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
+    }
+  }
+  
+  }
+
+
+ @media (min-width: 1536px) { 
+
+  @layer components {
+    .myContainer {
+      @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
+    }
+  }
+  
+  } */

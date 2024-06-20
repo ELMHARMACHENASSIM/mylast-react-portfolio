@@ -1,59 +1,102 @@
-import { NavLink } from "react-router-dom";
-import Logo from '../assets/images/logo.svg';
+import { motion ,useScroll} from "framer-motion"
+import LogoAnimation from "./LogoAnimation";
+import { useState,useEffect } from "react";
 
 // Using just default options
 
 const Header = () => {
-// Using just default options
+  const { scrollY } = useScroll();
+  const [isHidden, setIsHidden] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+    const { scrollYProgress } = useScroll();
+
+    useEffect(() => {
+      // Check if the current scroll position is greater than the previous one
+      const handleScroll = () => {
+        const currentScrollY = scrollY.get();
+        setIsHidden(currentScrollY > prevScrollY && currentScrollY > 0);
+        setPrevScrollY(currentScrollY);
+      };
+      scrollY.onChange(handleScroll);
+
+      return () => {
+        // Clean up the event listener
+        scrollY.onChange(null);
+      };
+    }, [scrollY, prevScrollY]);
 
   return (
     <>
-      <header className="w-[100%] h-[70px]">
-        <nav className="myContainer flex justify-between items-center gap-[20px] h-[100%]">
-          <ul className="link flex justify-start  gap-[20px] items-center max-w-[40%] ">
-            <li className="py-[10px] px-[10px]">
-              <NavLink to={"/home"} className={"text-black "}>
-                <span className="py-[10px] px-[15px] font-Poppins-R ">HOME</span>
-              </NavLink>
+      <header className={`w-[100%] h-[120px] fixed backdrop-blur-[10px] bg-[rgba(0,0,0,0.2)] z-[999] ${
+          isHidden ? "-translate-y-full" : ""
+        } transition-transform duration-300 ease-in-out`}>
+
+
+        <nav className="myContainer flex justify-start items-center gap-[20px] h-[100%]">
+          <div className="w-[15%] flex justify-start items-center">
+            <div className="logo  w-[120px] ">
+            <LogoAnimation className='w-[150px] h-[70px]'
+            />
+            </div>
+          </div>
+          <ul className="link flex justify-start items-center flex-1 ">
+            <li className="">
+              <a href="#Home" className={"text-body-color "}>
+                <span className="py-[10px] px-[15px] font-Poppins-R ">
+                  HOME
+                </span>
+              </a>
             </li>
-            <li className="py-[10px] px-[10px]">
-              <NavLink to={"/about"} className={"text-black  "}>
-                <span className="py-[10px] px-[15px] font-Poppins-R ">ABOUT</span>
-              </NavLink>
+            <li className="">
+              <a href="#About" className={"text-body-color  "}>
+                <span className="py-[10px] px-[15px] font-Poppins-R ">
+                  ABOUT
+                </span>
+              </a>
             </li>
-            <li className="py-[10px] px-[10px]">
-              <NavLink to={"/skills"} className={"text-black  "}>
-                <span className="py-[10px] px-[15px] font-Poppins-R ">SKILLS</span>
-              </NavLink>
+            <li className="">
+              <a href="#Skills" className={"text-body-color  "}>
+                <span className="py-[10px] px-[15px] font-Poppins-R ">
+                  SKILLS
+                </span>
+              </a>
             </li>
-            
+            <li className="">
+              <a href="#Services" className={"text-body-color  "}>
+                <span className="py-[10px] px-[10px] font-Poppins-R ">
+                  SERVICES
+                </span>
+              </a>
+            </li>
+            <li className="">
+              <a href="#Works" className={"text-body-color  "}>
+                <span className="py-[10px] px-[10px] font-Poppins-R ">
+                  WORKS
+                </span>
+              </a>
+            </li>
+          
           </ul>
-          <div className="w-[15%] flex justify-center items-center">
-               <div className="logo  w-[80px] h-[80px]">
-            <img src={Logo} alt="logo nassim" className="w-[100%] h-[100%]" title="logo"/>
-          </div>
-          </div>
-       
-          <ul className="link flex justify-end  gap-[20px] items-center max-w-[40%] ">
-            <li className="py-[10px] px-[15px]">
-              <NavLink to={"/services"} className={"text-black  "}>
-                <span className="py-[10px] px-[10px] font-Poppins-R ">SERVICES</span>
-              </NavLink>
-            </li>
-            <li className="py-[10px] px-[15px]">
-              <NavLink to={"/works"} className={"text-black  "}>
-                <span className="py-[10px] px-[10px] font-Poppins-R ">WORKS</span>
-              </NavLink>
-            </li>
-            <li className="py-[10px] px-[15px]">
-              <NavLink to={"/contact"} className={"text-black"}>
-                <span className="py-[10px] px-[10px] font-Poppins-R ">CONTACT</span>
-              </NavLink>
+          <ul className="w-[15%] flex justify-end">
+            <li className=" py-[5px] px-[10px] border-body-color border-[1px]">
+            <a href="#Contact" className={"text-body-color "}>
+                <span className=" font-Poppins-R text-body-color">
+               Contact me
+                </span>
+              </a>
             </li>
           </ul>
         </nav>
+          <motion.div
+        d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
+        style={{ scaleX: scrollYProgress }}
+        className="bg-body-color z-[100] h-[2px] "
+      />
       </header>
+    
+      
     </>
   );
 };
 export default Header;
+
