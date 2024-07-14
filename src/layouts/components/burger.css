@@ -1,0 +1,85 @@
+.button {
+ 
+  border: 0;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 8px;
+  transition: 0.25s;
+}
+
+
+
+.burger {
+  position: relative;
+  width: 60px;
+  border: 0;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  border-radius: 2px;
+  height: 2px;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.burger::before {
+  top: -8px;
+}
+
+.burger::after {
+  top: 8px;
+}
+
+
+
+/* burger-6 */
+
+.ham {
+  
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+.burger-6.is-closed.hamRotate {
+  transform: rotate(45deg) scale(1.2);
+}
+
+.line {
+  fill: none;
+  transition: 0.4s;
+  stroke: #FDF7E4;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.burger-6.is-closed.ham1 .top {
+  stroke-dashoffset: -98px;
+}
+.burger-6.is-closed.ham1 .bottom {
+  stroke-dashoffset: -138px;
+}

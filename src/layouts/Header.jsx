@@ -1,6 +1,7 @@
 import { motion ,useScroll} from "framer-motion"
 import LogoAnimation from "./LogoAnimation";
 import { useState,useEffect } from "react";
+import BurgerBtn from "./components/BurgerBtn";
 
 // Using just default options
 
@@ -86,12 +87,16 @@ const Header = () => {
               </a>
             </li>
           </ul>
+          <div>
+          <BurgerBtn/>
+          </div>
         </nav>
           <motion.div
         d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
         style={{ scaleX: scrollYProgress }}
         className="bg-body-color z-[100] h-[2px] "
       />
+     
       </header>
     
       
