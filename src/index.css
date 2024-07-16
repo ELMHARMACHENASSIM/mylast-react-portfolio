@@ -55,6 +55,9 @@
 
 
 @media (max-width: 767px) { 
+  body {
+    cursor: default !important;
+}
   @layer components {
     .myContainer {
       @apply w-[100%] ps-[10px] pe-[10px];
@@ -62,6 +65,9 @@
   }
  }
  @media (min-width: 768px) and (max-width: 1023px) { 
+  body {
+    cursor: default !important;
+}
   @layer components {
     .myContainer {
       @apply w-[100%] ps-[10px] pe-[10px];
@@ -69,6 +75,7 @@
   }
   }
   @media (min-width: 1024px) and (max-width: 1279px) { 
+    
     @layer components {
       .myContainer {
         @apply w-[90%] ms-auto me-auto ps-[20px] pe-[20px];
