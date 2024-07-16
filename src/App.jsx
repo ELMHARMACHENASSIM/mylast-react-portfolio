@@ -43,12 +43,9 @@ function App() {
   return (
     <>
    
-    <div className="md:flex sm:flex justify-center items-center sm:w-[100%]  sm:h-[100vh] md:w-[100%]  md:h-[100vh] lg:hidden xl:hidden xxl:hidden">
-          <h1 className=" text-body-color font-Poppins-R text-[20px] text-center">mobile & tablet coming soon <br/> &lt;/&gt; </h1>
-
-    </div>
+   
  
-    <div className="md:hidden sm:hidden ">
+  
       {/* <RouterProvider router={routerDom} /> */}
       <Header />
       <Home />   
@@ -87,7 +84,7 @@ function App() {
           mixBlendMode: "difference",
         }}
       />
-      </div>
+     
     </>
   );
 }

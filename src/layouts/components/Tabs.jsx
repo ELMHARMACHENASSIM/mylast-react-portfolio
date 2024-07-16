@@ -112,7 +112,7 @@ const TabsComponent = () => {
         loading="lazy"
       >
         <>
-          <div className="w-[100%] h-[100%] grid grid-cols-3 lg:grid-cols-2 gap-[20px] justify-between content-center">
+          <div className="w-[100%] h-[100%] grid grid-cols-3 sm:grid-cols-1 gap-[20px] justify-between content-center">
             <div className="card w-[100%]">
               <div className="w-[100%]">
                 <img src={ui1} alt="" className="w-[100%]" loading="lazy" />
@@ -157,7 +157,7 @@ const TabsComponent = () => {
         className="text-body-color backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] flex justify-center items-center "
       >
         <>
-          <div className="w-[100%] h-[100%] grid grid-cols-3 lg:grid-cols-2 gap-[20px] justify-between content-center">
+          <div className="w-[100%] h-[100%] grid grid-cols-3 sm:grid-cols-2 gap-[20px] justify-between content-center">
             <div className="card w-[100%]">
               <div className="w-[100%]">
                 <img src={Chef} alt="" className="w-[100%]" loading="lazy" />

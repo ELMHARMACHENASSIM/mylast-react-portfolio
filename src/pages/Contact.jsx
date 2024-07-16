@@ -57,12 +57,12 @@ const Contact = () => {
           <h1 className="text-body-color text-[30px] font-KOLAK">CONTACT ME</h1>
           <form
             action=""
-            className=" flex w-[60%]  justify-center items-center flex-col gap-[20px] font-Poppins-E"
+            className=" flex w-[60%] sm:w-[100%] justify-center items-center flex-col gap-[20px] font-Poppins-E"
             ref={form}
             onSubmit={sendEmail}
           >
-            <div className="w-[100%] flex justify-center gap-[20px]">
-              <div className="w-[40%]">
+            <div className="w-[100%] flex justify-center gap-[20px] sm:flex-col">
+              <div className="w-[40%] sm:w-[100%]">
                 <input
                   type="text"
                   name="user_name"
@@ -74,7 +74,7 @@ const Contact = () => {
                   }}
                 />
               </div>
-              <div className="w-[60%]">
+              <div className="w-[60%] sm:w-[100%]">
                 <input
                   type="email"
                   name="user_email"

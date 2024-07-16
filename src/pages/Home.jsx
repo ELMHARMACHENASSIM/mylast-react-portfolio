@@ -14,21 +14,20 @@ const Home = () => {
   return (
     <>
       <div
-        className="myContainer   h-[100vh] flex justify-center items-center"
+        className="myContainer   h-[100vh] flex justify-center items-center "
         id="Home"
       >
-        <div className=" relative w-[100%] font-Boldstorm text-center leading-[90px]  ">
+        <div className=" relative w-[100%] font-Boldstorm text-center leading-[90px] sm:leading-[50px]  ">
         
          <MoveCyrcle/>
-          <h1 className="font-Sign text-body-color text-[100px]">
+          <h1 className="font-Sign text-body-color text-[100px] sm:text-[40px]">
             Hello I&lsquo;m
           </h1>
-          <h1 className="text-[120px] text-body-color p-0 font-KOLAK">GRAPHIC DESIGNER</h1>
-          <h1 className="text-[120px] text-body-color p-0 font-KOLAK">UI UX DESIGNER </h1>
-          <h1 className="text-[120px] text-body-color p-0 font-KOLAK">
-            FRONTEND <br /> DEVELOPER
-          </h1>
-          <div className="cv flex w-[100%] justify-between items-center ">
+          <h1 className="text-[120px] sm:text-[50px] text-body-color p-0 font-KOLAK">GRAPHIC DESIGNER</h1>
+          <h1 className="text-[120px] sm:text-[50px] text-body-color p-0 font-KOLAK">UI UX DESIGNER </h1>
+          <h1 className="text-[120px] sm:text-[50px] text-body-color p-0 font-KOLAK">FRONTEND </h1>
+          <h1 className="text-[120px] sm:text-[50px] text-body-color p-0 font-KOLAK">DEVELOPER</h1>
+          <div className="cv flex w-[100%] justify-between sm:flex-col items-center sm:gap-[155px]">
             <div className="border-body-color border-[1px]  py-[10px] px-[20px] h-[50px] gap-[10px] flex justify-center items-center pointer-events-none">
               <FontAwesomeIcon
                 icon={faArrowDownLong}

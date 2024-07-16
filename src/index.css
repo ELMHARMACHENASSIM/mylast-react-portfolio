@@ -54,55 +54,31 @@
 }
 
 
- /* @media (min-width: 640px and max-width: 767px) { 
-
+@media (max-width: 767px) { 
   @layer components {
     .myContainer {
-      @apply w-[100%] ms-auto me-auto ps-[20px] pe-[20px];
+      @apply w-[100%] ps-[10px] pe-[10px];
     }
   }
-  
-  }
-
- @media (min-width: 768px and max-width: 1023px) { 
-
+ }
+ @media (min-width: 768px) and (max-width: 1023px) { 
   @layer components {
     .myContainer {
-      @apply w-[100%] ms-auto me-auto ps-[20px] pe-[20px];
+      @apply w-[100%] ps-[10px] pe-[10px];
     }
   }
-  
   }
-
-
- @media (min-width: 1024px and max-width: 1279px) { 
-
-  @layer components {
-    .myContainer {
-      @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
+  @media (min-width: 1024px) and (max-width: 1279px) { 
+    @layer components {
+      .myContainer {
+        @apply w-[90%] ms-auto me-auto ps-[20px] pe-[20px];
+      }
+    }
+   }
+  @media (min-width: 1280px) { 
+    @layer components {
+      .myContainer {
+        @apply w-[90%] ms-auto me-auto ps-[20px] pe-[20px];
+      }
     }
   }
-  
-  }
-
-
- @media (min-width: 1280px and max-width: 1535px) { 
-
-  @layer components {
-    .myContainer {
-      @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
-    }
-  }
-  
-  }
-
-
- @media (min-width: 1536px) { 
-
-  @layer components {
-    .myContainer {
-      @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
-    }
-  }
-  
-  } */
