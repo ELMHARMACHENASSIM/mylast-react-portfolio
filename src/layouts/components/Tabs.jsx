@@ -108,42 +108,42 @@ const TabsComponent = () => {
       <CustomTabPanel
         value={value}
         index={0}
-        className="text-body-color backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] flex justify-center items-center "
+        className="text-body-color w-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] flex justify-center items-center "
         loading="lazy"
       >
         <>
-          <div className="w-[100%] h-[100%] grid grid-cols-3 sm:grid-cols-1 gap-[20px] justify-between content-center">
-            <div className="card w-[100%]">
+          <div className="w-[100%] h-[100%] grid grid-cols-5  gap-[20px] justify-between content-center">
+            <div className="w-[100%]">
               <div className="w-[100%]">
                 <img src={ui1} alt="" className="w-[100%]" loading="lazy" />
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={ui2} alt="" className="w-[100%]" loading="lazy" />
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={ui3} alt="" className="w-[100%]" loading="lazy" />
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={ui4} alt="" className="w-[100%]" loading="lazy" />
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={ui5} alt="" className="w-[100%]" loading="lazy" />
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={ui6} alt="" className="w-[100%]" loading="lazy" />
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={ui7} alt="" className="w-[100%]" loading="lazy" />
               </div>
@@ -154,11 +154,11 @@ const TabsComponent = () => {
       <CustomTabPanel
         value={value}
         index={1}
-        className="text-body-color backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] flex justify-center items-center "
+        className="text-body-color w-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] flex justify-center items-center "
       >
         <>
-          <div className="w-[100%] h-[100%] grid grid-cols-3 sm:grid-cols-2 gap-[20px] justify-between content-center">
-            <div className="card w-[100%]">
+          <div className="w-[100%] h-[100%] grid grid-cols-5  gap-[20px] justify-between content-center">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={Chef} alt="" className="w-[100%]" loading="lazy" />
               </div>
@@ -173,7 +173,7 @@ const TabsComponent = () => {
                 </a>
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img
                   src={LionsResto}
@@ -193,7 +193,7 @@ const TabsComponent = () => {
                 </a>
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={Lions} alt="" className="w-[100%]" loading="lazy" />
               </div>
@@ -208,7 +208,7 @@ const TabsComponent = () => {
                 </a>
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img
                   src={maserati}
@@ -228,7 +228,7 @@ const TabsComponent = () => {
                 </a>
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={Spatial} alt="" className="w-[100%]" loading="lazy" />
               </div>
@@ -243,7 +243,7 @@ const TabsComponent = () => {
                 </a>
               </div>
             </div>
-            <div className="card w-[100%]">
+            <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={Flati} alt="" className="w-[100%]" loading="lazy" />
               </div>

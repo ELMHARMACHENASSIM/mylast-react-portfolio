@@ -1,22 +1,19 @@
 .button {
- 
-  border: 0;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: grid;
-  place-items: center;
+  place-items: end;
   cursor: pointer;
   padding: 0;
   border-radius: 8px;
   transition: 0.25s;
 }
 
-
-
 .burger {
   position: relative;
-  width: 60px;
+  margin-left: 30px;
   border: 0;
+  width: 100%;
 }
 
 .burger,
@@ -45,31 +42,28 @@
   top: 8px;
 }
 
-
-
 /* burger-6 */
 
 .ham {
-  
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  
 }
 
 .burger-6.is-closed.hamRotate {
-  transform: rotate(45deg) scale(1.2);
+  transform: rotate(45deg) scale(0.9);
 }
 
 .line {
   fill: none;
   transition: 0.4s;
-  stroke: #FDF7E4;
+  stroke: #fdf7e4;
   stroke-width: 3;
   stroke-linecap: round;
+  
 }
 .ham1 .top {
   stroke-dasharray: 40 139;

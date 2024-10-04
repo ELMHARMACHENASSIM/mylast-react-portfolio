@@ -4,7 +4,7 @@
 /* custom style */
 @layer components {
   .myContainer {
-    @apply w-[80%] ms-auto me-auto ps-[20px] pe-[20px];
+    @apply w-[80%] sm:w-[95%] md:w-[95%] lg:w-[90%] ms-auto me-auto ps-[20px] pe-[20px];
   }
 }
 @font-face {
@@ -52,40 +52,3 @@
   -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: #fdf7e4;
 }
-
-
-@media (max-width: 767px) { 
-  body {
-    cursor: default !important;
-}
-  @layer components {
-    .myContainer {
-      @apply w-[100%] ps-[10px] pe-[10px];
-    }
-  }
- }
- @media (min-width: 768px) and (max-width: 1023px) { 
-  body {
-    cursor: default !important;
-}
-  @layer components {
-    .myContainer {
-      @apply w-[100%] ps-[10px] pe-[10px];
-    }
-  }
-  }
-  @media (min-width: 1024px) and (max-width: 1279px) { 
-    
-    @layer components {
-      .myContainer {
-        @apply w-[90%] ms-auto me-auto ps-[20px] pe-[20px];
-      }
-    }
-   }
-  @media (min-width: 1280px) { 
-    @layer components {
-      .myContainer {
-        @apply w-[90%] ms-auto me-auto ps-[20px] pe-[20px];
-      }
-    }
-  }
