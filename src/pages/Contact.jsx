@@ -149,30 +149,43 @@ const Contact = () => {
           </form>
           <span className="text-body-color font-KOLAK">OR</span>
           <div className="w-[100%] flex justify-center gap-[20px]">
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="text-[20px] icons text-body-color"
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="text-[20px] icons text-body-color"
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-[20px] icons text-body-color"
-            />
-            <FontAwesomeIcon
-              icon={faInstagramSquare}
-              className="text-[20px] icons text-body-color"
-            />
-            <FontAwesomeIcon
-              icon={faSquareXTwitter}
-              className="text-[20px] icons text-body-color"
-            />
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="text-[20px] icons text-body-color"
-            />
+       
+                <a href="https://www.facebook.com/elmharmachenassim/" rel="noopener noreferrer" target="_blank">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="text-[20px] icons text-body-color"
+                  />
+                </a>
+                <a href="https://github.com/ELMHARMACHENASSIM" rel="noopener noreferrer" target="_blank">
+                  
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-[20px] icons text-body-color"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/nassim-el-m-harmache-167a61201/" rel="noopener noreferrer" target="_blank">
+                 
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="text-[20px] icons text-body-color"
+                  />
+                </a>
+                <a href="https://www.instagram.com/elmharmachenassim/" rel="noopener noreferrer" target="_blank">
+                  
+                  <FontAwesomeIcon
+                    icon={faInstagramSquare}
+                    className="text-[20px] icons text-body-color"
+                  />
+                </a>
+                <a href="" rel="noopener noreferrer" target="_blank">
+                  {" "}
+                  <FontAwesomeIcon
+                    icon={faSquareXTwitter}
+                    className="text-[20px] icons text-body-color"
+                  />
+                </a>{" "}
+              
+          
           </div>
         </div>
       </section>
