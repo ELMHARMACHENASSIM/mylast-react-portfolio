@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./burger.css";
 // import "./burgerstyle.css";
-const BurgerBtn = () => {
-  const [isClosed, setIsClosed] = useState(false);
+const BurgerBtn = ({onClick}) => {
+  const [isClosed, setIsClosed] = useState(true);
 
   const toggleClass = () => {
     setIsClosed((prevIsClosed) => !prevIsClosed);
+    onClick();
   };
 
   return (
