@@ -13,7 +13,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    setIsOpen((prevIsOpen) => !prevIsOpen);
+    setIsOpen(!isOpen);
     
   };
   useEffect(() => {
@@ -22,6 +22,7 @@ const Header = () => {
       const currentScrollY = scrollY.get();
       setIsHidden(currentScrollY > prevScrollY && currentScrollY > 0);
       setPrevScrollY(currentScrollY);
+      setIsOpen(false);
     };
     scrollY.onChange(handleScroll);
 
@@ -93,9 +94,9 @@ const Header = () => {
           <div className="sm:block border-[1px] relative border-[white] rounded-full lg:hidden xl:hidden 2l:hidden">
             <BurgerBtn onClick={handleClick} />
           </div>
-          <div className={`absolute left-0 top-[100%] w-[100%] ${!isOpen ? "block" : "hidden"}`}>
+          <div className={`absolute left-0 top-[100%] w-[100%] ${isOpen ? "block" : "hidden"} md:hidden 2l:hidden l:hidden lg:hidden`}>
             <ul
-              className='w-[100%] py-[20px] bg-black flex justify-center items-center  2l:hidden l:hidden lg:hidden flex-col gap-[25px] h-[100%]'
+              className='w-[100%] py-[20px] bg-black flex justify-center items-center   flex-col gap-[25px] h-[100%]'
             >
               <li className="py-[10px]">
                 <a href="#Home" className={"text-body-color "}>

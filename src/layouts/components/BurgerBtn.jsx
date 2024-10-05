@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./burger.css";
 // import "./burgerstyle.css";
 const BurgerBtn = ({onClick}) => {
-  const [isClosed, setIsClosed] = useState(true);
+  const [isClosed, setIsClosed] = useState(false);
 
   const toggleClass = () => {
     setIsClosed((prevIsClosed) => !prevIsClosed);
@@ -13,7 +13,7 @@ const BurgerBtn = ({onClick}) => {
     <div>
       <button
         onClick={toggleClass}
-        className={`button ham ${isClosed ? "is-closed" : ""}`}
+        className={`button ham ${isClosed ? "" : "is-closed"}`}
       >
         <svg
           className={` burger-6 ham hamRotate ham1 flex justify-end ${
