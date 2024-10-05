@@ -5,7 +5,7 @@ import {
   faLinkedin,
   faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowDownLong, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import scrollBar from "../assets/images/scroll.svg";
 import MoveCyrcle from "../layouts/MoveCyrcle";

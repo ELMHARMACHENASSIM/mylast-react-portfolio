@@ -22,6 +22,7 @@ import Skills from "./pages/Skills";
 import Services from "./pages/Services";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
+import { useEffect, useState } from "react";
 
 gsap.registerPlugin(
   useGSAP,
@@ -40,6 +41,22 @@ gsap.registerPlugin(
   CustomEase
 );
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // You can adjust the width for mobile
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener for resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
    
@@ -54,7 +71,9 @@ function App() {
       <Services/>
       <Works/>
       <Contact/>
-      <AnimatedCursor
+      {!isMobile && (
+
+         <AnimatedCursor
         innerSize={10}
         outerSize={30}
         color="253, 247, 228"
@@ -83,7 +102,9 @@ function App() {
           border: "1px solid black",
           mixBlendMode: "difference",
         }}
-      />
+      />  
+      )}
+   
      
     </>
   );

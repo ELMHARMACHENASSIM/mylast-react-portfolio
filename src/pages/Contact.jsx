@@ -7,7 +7,7 @@ import {
   faLinkedin,
   faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 const Contact = () => {
