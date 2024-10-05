@@ -47,7 +47,7 @@ const TitleAbout = (props) => {
     });
 
     return (
-      <div className="parallax font-KOLAK ">
+      <div className="parallax font-KOLAK select-none">
         <motion.div className="scroller text-body-color flex items-center " style={{ x }}>
           <span className="strok">{children} </span>
           <span className="">{children} </span>

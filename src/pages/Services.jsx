@@ -23,15 +23,18 @@ const Services = () => {
   return (
     <>
       <TitleAbout title="Services" />
-      <section className="relative my-[50px] h-[100vh]" id="Services">
-        <div className="w-[50%] h-[50%] sm:hidden top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute flex justify-center items-center z-[-1] opacity-[0.2]">
+      <section
+        className="relative my-[50px] h-[100vh] select-none"
+        id="Services"
+      >
+        <div className="md:w-[100%] w-[50%] sm:hidden md:block  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute flex justify-center items-center z-[-1] opacity-[0.5]">
           <img src={ServicesSvg} alt="" srcSet="" loading="lazy" />
         </div>
         <div className="myContainer h-[100%] flex justify-center items-center ">
-          <div className="w-[100%] h-[70%] sm:h-[80%]">
+          <div className="w-[100%] h-[70%] sm:h-[100%]">
             <Carousel pauseOnHover>
               <div className=" text-body-color w-[100%] h-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)]  flex justify-center items-center flex-col gap-[20px]">
-                <h1 className="text-[40px]">Graphic designe</h1>
+                <h1 className="text-[40px] sm:text-[30px]">Graphic designe</h1>
                 <p className="w-[50%] sm:w-[60%] text-center">
                   Graphic design is a craft where professionals create visual
                   content to communicate messages. By applying visual hierarchy
@@ -43,13 +46,23 @@ const Services = () => {
                 <div className="flex justify-center items-center flex-col gap-[10px]">
                   <h4>Tools</h4>
                   <div className="flex gap-[20px]">
-                    <img src={Illustrator} alt="" className="w-[30px]" loading="lazy" />
-                    <img src={Photoshop} alt="" className="w-[30px]"  loading="lazy"/>
+                    <img
+                      src={Illustrator}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src={Photoshop}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
               <div className=" text-body-color w-[100%] h-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)]  flex justify-center items-center flex-col gap-[20px]">
-                <h1 className="text-[40px]">Frontend Website</h1>
+                <h1 className="text-[40px] sm:text-[30px]">Frontend Website</h1>
                 <p className="w-[50%]  sm:w-[60%] text-center">
                   Front-end development is the development of visual and
                   interactive elements of a website that users interact with
@@ -60,21 +73,56 @@ const Services = () => {
                 <div className="flex justify-center items-center flex-col gap-[10px]">
                   <h4>Tools</h4>
                   <div className="flex gap-[20px] sm:flex-wrap sm:justify-center sm:p-[10px]">
-                    <img src={Html} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Css} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Js} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Sass} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Tailwind} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Bootstrap} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={ReactJs} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Git} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Github} alt="" className="w-[30px]"  loading="lazy"/>
-                    <img src={Vscode} alt="" className="w-[30px]"  loading="lazy"/>
+                    <img
+                      src={Html}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img src={Css} alt="" className="w-[30px]" loading="lazy" />
+                    <img src={Js} alt="" className="w-[30px]" loading="lazy" />
+                    <img
+                      src={Sass}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src={Tailwind}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src={Bootstrap}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src={ReactJs}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img src={Git} alt="" className="w-[30px]" loading="lazy" />
+                    <img
+                      src={Github}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src={Vscode}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
               <div className=" text-body-color w-[100%] h-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)]  flex justify-center items-center flex-col gap-[20px]">
-                <h1 className="text-[40px]">UI/UX designe</h1>
+                <h1 className="text-[40px] sm:text-[30px]">UI/UX designe</h1>
                 <p className="w-[50%] sm:w-[60%] text-center">
                   Get started. In digital design, user interface (UI) refers to
                   the interactivity, look, and feel of a product screen or web
@@ -84,28 +132,49 @@ const Services = () => {
                 <div className="flex justify-center items-center flex-col gap-[10px]">
                   <h4>Tools</h4>
                   <div className="flex gap-[20px]">
-                    <img src={Figma} alt="" className="w-[30px]" loading="lazy"/>
-                    <img src={Xd} alt="" className="w-[30px]" loading="lazy"/>
+                    <img
+                      src={Figma}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img src={Xd} alt="" className="w-[30px]" loading="lazy" />
                   </div>
                 </div>
               </div>
               <div className=" text-body-color w-[100%] h-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)]  flex justify-center items-center flex-col gap-[20px]">
-                <h1 className="text-[40px]">Backend Website</h1>
+                <h1 className="text-[40px] sm:text-[30px]">Backend Website</h1>
                 <p className="w-[50%] text-center">
                   The backend (or “server side”) is the portion of the website
-                  you don&apos;t see. It&apos;s responsible for storing and organizing
-                  data, and ensuring everything on the client-side actually
-                  works. The backend communicates with the frontend, sending and
-                  receiving information to be displayed as a web page
+                  you don&apos;t see. It&apos;s responsible for storing and
+                  organizing data, and ensuring everything on the client-side
+                  actually works. The backend communicates with the frontend,
+                  sending and receiving information to be displayed as a web
+                  page
                 </p>
                 <div className="flex justify-center items-center flex-col gap-[10px]">
                   <h4>Tools</h4>
                   <div className="flex gap-[20px]">
-                    <img src={Php} alt="" className="w-[30px]" loading="lazy"/>
-                    <img src={Laravel} alt="" className="w-[30px]" loading="lazy"/>
-                    <img src={Git} alt="" className="w-[30px]" loading="lazy"/>
-                    <img src={Github} alt="" className="w-[30px]" loading="lazy"/>
-                    <img src={Vscode} alt="" className="w-[30px]" loading="lazy"/>
+                    <img src={Php} alt="" className="w-[30px]" loading="lazy" />
+                    <img
+                      src={Laravel}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img src={Git} alt="" className="w-[30px]" loading="lazy" />
+                    <img
+                      src={Github}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src={Vscode}
+                      alt=""
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>

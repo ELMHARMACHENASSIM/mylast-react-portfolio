@@ -108,14 +108,14 @@ const TabsComponent = () => {
       <CustomTabPanel
         value={value}
         index={0}
-        className="text-body-color w-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] flex justify-center items-center "
+        className="text-body-color w-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)]  "
         loading="lazy"
       >
         <>
-          <div className="w-[100%] h-[100%] grid grid-cols-5  gap-[20px] justify-between content-center">
-            <div className="w-[100%]">
-              <div className="w-[100%]">
-                <img src={ui1} alt="" className="w-[100%]" loading="lazy" />
+          <div className="w-[100%] h-[100%] grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-[15px] ">
+            <div className="w-[100%] ">
+              <div className="w-[100%] h-[100%]">
+                <img src={ui1} alt="" className="w-[100%] h-[100%]" loading="lazy" />
               </div>
             </div>
             <div className=" w-[100%]">
@@ -157,7 +157,7 @@ const TabsComponent = () => {
         className="text-body-color w-[100%] backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] flex justify-center items-center "
       >
         <>
-          <div className="w-[100%] h-[100%] grid grid-cols-5  gap-[20px] justify-between content-center">
+          <div className="w-[100%] h-[100%] grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-[15px]">
             <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img src={Chef} alt="" className="w-[100%]" loading="lazy" />

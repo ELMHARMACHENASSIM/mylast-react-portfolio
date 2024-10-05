@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./burger.css";
-import "./burgerstyle.css";
+// import "./burgerstyle.css";
 const BurgerBtn = () => {
   const [isClosed, setIsClosed] = useState(false);
 

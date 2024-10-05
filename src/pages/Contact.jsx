@@ -52,7 +52,7 @@ const Contact = () => {
   return (
     <>
       <TitleAbout title="Contact Me" />
-      <section className="relative my-[50px] h-[100vh] " id="Contact">
+      <section className="relative my-[50px] h-[100vh] select-none" id="Contact">
         <div className="myContainer h-[100%] flex justify-center flex-col gap-[30px] items-center">
           <h1 className="text-body-color text-[30px] font-KOLAK">CONTACT ME</h1>
           <form

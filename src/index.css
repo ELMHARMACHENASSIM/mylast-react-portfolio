@@ -4,7 +4,7 @@
 /* custom style */
 @layer components {
   .myContainer {
-    @apply w-[80%] sm:w-[95%] md:w-[95%] lg:w-[90%] ms-auto me-auto ps-[20px] pe-[20px];
+    @apply w-[80%] sm:w-[95%] md:w-[95%] lg:w-[90%] ms-auto me-auto ps-[15px] pe-[15px];
   }
 }
 @font-face {

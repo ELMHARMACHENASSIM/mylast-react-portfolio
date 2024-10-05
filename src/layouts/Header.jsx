@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`w-[100%] h-[120px] fixed backdrop-blur-[10px] bg-[rgba(0,0,0,0.2)] z-[999] ${
+        className={`w-[100%] h-[120px] select-none fixed backdrop-blur-[10px] bg-[rgba(0,0,0,0.2)] z-[999] ${
           isHidden ? "-translate-y-full" : ""
         } transition-transform duration-300 ease-in-out`}
       >
