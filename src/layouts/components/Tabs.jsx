@@ -165,7 +165,7 @@ const TabsComponent = () => {
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>Taste</h1>
                 <a
-                  href=""
+                  href="https://elmharmachenassim.github.io/projet_css_Nassim_Elmharmache/" target="_blank" rel="noopener noreferrer"
                   className="border-[1px] border-body-color py-[5px] px-[10px] "
                 >
                   <FontAwesomeIcon icon={faPlay} />{" "}
@@ -185,7 +185,7 @@ const TabsComponent = () => {
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>LionsResto</h1>
                 <a
-                  href=""
+                  href="https://elmharmachenassim.github.io/prj-final-js/" target="_blank" rel="noopener noreferrer"
                   className="border-[1px] border-body-color py-[5px] px-[10px] "
                 >
                   <FontAwesomeIcon icon={faPlay} />{" "}
@@ -200,7 +200,7 @@ const TabsComponent = () => {
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>My Lionsgeek</h1>
                     <a
-                  href=""
+                  href="https://mylionsgeek.ma/" target="_blank" rel="noopener noreferrer"
                   className="border-[1px] border-body-color py-[5px] px-[10px] "
                 >
                   <FontAwesomeIcon icon={faPlay} />{" "}
@@ -220,7 +220,7 @@ const TabsComponent = () => {
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>Maserati</h1>
                     <a
-                  href=""
+                  href="https://elmharmachenassim.github.io/maain-maserati-update/" target="_blank" rel="noopener noreferrer"
                   className="border-[1px] border-body-color py-[5px] px-[10px] "
                 >
                   <FontAwesomeIcon icon={faPlay} />{" "}
@@ -235,7 +235,7 @@ const TabsComponent = () => {
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>Spatial</h1>
                     <a
-                  href=""
+                  href="https://elmharmachenassim.github.io/spatial/" target="_blank" rel="noopener noreferrer"
                   className="border-[1px] border-body-color py-[5px] px-[10px] "
                 >
                   <FontAwesomeIcon icon={faPlay} />{" "}
@@ -250,7 +250,7 @@ const TabsComponent = () => {
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>Flati</h1>
                     <a
-                  href=""
+                  href="https://elmharmachenassim.github.io/FLATI/" target="_blank" rel="noopener noreferrer"
                   className="border-[1px] border-body-color py-[5px] px-[10px] "
                 >
                   <FontAwesomeIcon icon={faPlay} />{" "}
