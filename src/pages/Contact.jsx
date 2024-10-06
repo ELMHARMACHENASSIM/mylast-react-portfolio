@@ -142,7 +142,7 @@ const Contact = () => {
                     <span className="sr-only">Loading...</span>
                   </div>
                 ) : (
-                  "Send Massage"
+                  "Send Message"
                 )}{" "}
               </button>
             </div>
