@@ -1,4 +1,3 @@
-
 import AnimatedCursor from "react-animated-cursor";
 import "./index.css";
 // import routerDom from "./layouts/Index";
@@ -23,6 +22,7 @@ import Services from "./pages/Services";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
+import Loading from "./layouts/components/Loading";
 
 gsap.registerPlugin(
   useGSAP,
@@ -42,7 +42,16 @@ gsap.registerPlugin(
 );
 function App() {
   const [isMobile, setIsMobile] = useState(false);
+   const [loading, setLoading] = useState(!localStorage.getItem('loadingShown'));
 
+  useEffect(() => {
+    // Simulate data fetching by setting a timeout for loading
+    const timeout = setTimeout(() => {
+      setLoading(false); 
+      localStorage.setItem('loadingShown', 'true');// Stop loading after a delay
+    }, 10000); // Adjust this duration as needed
+    return () => clearTimeout(timeout);
+  }, []);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768); // You can adjust the width for mobile
@@ -59,53 +68,52 @@ function App() {
   }, []);
   return (
     <>
-   
-   
- 
-  
       {/* <RouterProvider router={routerDom} /> */}
-      <Header />
-      <Home />   
-      <About />
-      <Skills />
-      <Services/>
-      <Works/>
-      <Contact/>
-      {!isMobile && (
-
-         <AnimatedCursor
-        innerSize={10}
-        outerSize={30}
-        color="253, 247, 228"
-        outerAlpha={1}
-        innerScale={0.7}
-        outerScale={3}
-        clickables={[
-          "a",
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-          "h1",
-          ".icons",
-          ".cv",
-          ".logo"
-        ]}
-        hasBlendMode={true}
-        outerStyle={{
-          border: "1px solid black",
-          mixBlendMode: "difference",
-        }}
-      />  
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Header />
+          <Home />
+          <About />
+          <Skills />
+          <Services />
+          <Works />
+          <Contact />
+          {!isMobile && (
+            <AnimatedCursor
+              innerSize={10}
+              outerSize={30}
+              color="253, 247, 228"
+              outerAlpha={1}
+              innerScale={0.7}
+              outerScale={3}
+              clickables={[
+                "a",
+                'input[type="text"]',
+                'input[type="email"]',
+                'input[type="number"]',
+                'input[type="submit"]',
+                'input[type="image"]',
+                "label[for]",
+                "select",
+                "textarea",
+                "button",
+                ".link",
+                "h1",
+                ".icons",
+                ".cv",
+                ".logo",
+              ]}
+              hasBlendMode={true}
+              outerStyle={{
+                border: "1px solid black",
+                mixBlendMode: "difference",
+              }}
+            />
+          )}
+        </>
       )}
-   
-     
     </>
   );
 }
