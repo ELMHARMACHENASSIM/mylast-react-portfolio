@@ -5,12 +5,13 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Chef from "../../assets/prj/chef.webp";
-import Lions from "../../assets/prj/mylionsgeek.webp";
-import LionsResto from "../../assets/prj/lionsresto.webp";
-import maserati from "../../assets/prj/maserati.webp";
-import Flati from "../../assets/prj/flati.webp";
-import Spatial from "../../assets/prj/spatial.webp";
+import taste from "../../assets/prj/taste.webp";
+import aladhan from "../../assets/prj/adan.webp";
+import lions from "../../assets/prj/myliongeek.webp";
+import lionsResto from "../../assets/prj/lionsgresto.webp";
+import maserati from "../../assets/prj/mazerati.webp";
+import flati from "../../assets/prj/flati.webp";
+import spatial from "../../assets/prj/spatial.webp";
 import ui1 from "../../assets/prj/ui1.webp";
 import ui2 from "../../assets/prj/ui2.webp";
 import ui3 from "../../assets/prj/ui3.webp";
@@ -160,7 +161,22 @@ const TabsComponent = () => {
           <div className="w-[100%] h-[100%] grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-[15px]">
             <div className=" w-[100%]">
               <div className="w-[100%]">
-                <img src={Chef} alt="" className="w-[100%]" loading="lazy" />
+                <img src={aladhan} alt="" className="w-[100%]" loading="lazy" />
+              </div>
+              <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
+                <h1>aladhan</h1>
+                <a
+                  href="https://aladhan-v1.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  className="border-[1px] border-body-color py-[5px] px-[10px] "
+                >
+                  <FontAwesomeIcon icon={faPlay} />{" "}
+                  <span className="ms-[10px]">Demo</span>
+                </a>
+              </div>
+            </div>
+            <div className=" w-[100%]">
+              <div className="w-[100%]">
+                <img src={taste} alt="" className="w-[100%]" loading="lazy" />
               </div>
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>Taste</h1>
@@ -176,7 +192,7 @@ const TabsComponent = () => {
             <div className=" w-[100%]">
               <div className="w-[100%]">
                 <img
-                  src={LionsResto}
+                  src={lionsResto}
                   alt=""
                   className="w-[100%]"
                   loading="lazy"
@@ -195,7 +211,7 @@ const TabsComponent = () => {
             </div>
             <div className=" w-[100%]">
               <div className="w-[100%]">
-                <img src={Lions} alt="" className="w-[100%]" loading="lazy" />
+                <img src={lions} alt="" className="w-[100%]" loading="lazy" />
               </div>
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>My Lionsgeek</h1>
@@ -230,7 +246,7 @@ const TabsComponent = () => {
             </div>
             <div className=" w-[100%]">
               <div className="w-[100%]">
-                <img src={Spatial} alt="" className="w-[100%]" loading="lazy" />
+                <img src={spatial} alt="" className="w-[100%]" loading="lazy" />
               </div>
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>Spatial</h1>
@@ -245,7 +261,7 @@ const TabsComponent = () => {
             </div>
             <div className=" w-[100%]">
               <div className="w-[100%]">
-                <img src={Flati} alt="" className="w-[100%]" loading="lazy" />
+                <img src={flati} alt="" className="w-[100%]" loading="lazy" />
               </div>
               <div className="info w-[100%] bg-dark flex justify-between items-center py-[40px] px-[20px]">
                 <h1>Flati</h1>
