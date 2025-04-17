@@ -20,41 +20,41 @@ const Skills = () => {
   return (
     <>
       <TitleAbout title="Skills" />
-      <section className="relative my-[50px] h-[100vh] sm:h-[100%] md:h-[100%] lg:h-[100%] select-none" id="Skills">
+      <section className="relative my-[50px] h-[100%] sm:h-[100%] md:h-[100%] lg:h-[100%] select-none" id="Skills">
         <div className="md:w-[100%] w-[50%] sm:hidden md:block  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute flex justify-center items-center z-[-1] opacity-[0.5]">
           <img src={SkillsSvg} alt="" srcSet="" loading="lazy" />
         </div>
         <div className="myContainer h-[100%] py-[50px] flex justify-center items-center">
           <div className="backdrop-blur-[10px] bg-[rgba(255,255,255,0.05)] p-[50px] sm:p-[0px]">
             <div className="">
-              <h1 className="text-start sm:text-center text-[40px] font-Boldstorm text-body-color py-[20px]">
+              <h1 className="text-start sm:text-center text-[25px] font-KOLAK text-body-color py-[20px]">
                 Languages
               </h1>
-              <div className="flex justify-start sm:flex-col md:flex-wrap lg:flex-wrap items-center w-[100%] gap-[50px]">
-                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center  p-[10px] w-[150px]">
+              <div className="flex justify-center sm:flex-col md:flex-wrap lg:flex-wrap items-center w-[100%] gap-[50px]">
+                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center flex-col p-[10px] w-[150px] h-[150px]">
                   <img src={Html} className="w-[40px]" alt="" loading="lazy" />
                   <span>Html5</span>
                 </div>
-                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center  p-[10px] w-[150px]">
+                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center flex-col p-[10px] w-[150px] h-[150px]">
                   <img src={Css} className="w-[40px]" alt="" loading="lazy" />
                   <span>Css3</span>
                 </div>
-                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center  p-[10px] w-[150px]">
+                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center flex-col p-[10px] w-[150px] h-[150px]">
                   <img src={Js} className="w-[40px]" alt="" loading="lazy" />
                   <span>Javascript</span>
                 </div>
-                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center  p-[10px] w-[150px]">
+                <div className="flex gap-[15px] border-body-color border-[1px]  text-body-color justify-center items-center flex-col p-[10px] w-[150px] h-[150px]">
                   <img src={Php} className="w-[40px]" alt="" loading="lazy" />
                   <span>Php</span>
                 </div>
               </div>
             </div>
             <div className="">
-              <h1 className="text-start sm:text-center text-[40px] font-Boldstorm text-body-color py-[20px]">
+              <h1 className="text-start sm:text-center text-[25px] font-KOLAK text-body-color py-[20px]">
                 fremworks and library
               </h1>
-              <div className="flex justify-start sm:flex-col md:flex-wrap lg:flex-wrap items-center w-[100%] gap-[50px]">
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+              <div className="flex justify-center sm:flex-col md:flex-wrap lg:flex-wrap items-center w-[100%] gap-[50px]">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img
                     src={ReactJs}
                     className="w-[40px]"
@@ -63,7 +63,7 @@ const Skills = () => {
                   />{" "}
                   <span>ReactJs</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img
                     src={Tailwind}
                     className="w-[40px]"
@@ -72,7 +72,7 @@ const Skills = () => {
                   />{" "}
                   <span>Tailwind</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img
                     src={Bootstrap}
                     className="w-[40px]"
@@ -81,11 +81,11 @@ const Skills = () => {
                   />{" "}
                   <span>Bootstrap</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img src={Sass} className="w-[40px]" alt="" loading="lazy" />{" "}
                   <span>Sass</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img
                     src={Laravel}
                     className="w-[40px]"
@@ -97,15 +97,15 @@ const Skills = () => {
               </div>
             </div>
             <div className="">
-              <h1 className="text-start sm:text-center text-[40px] font-Boldstorm text-body-color py-[20px]">
+              <h1 className="text-start sm:text-center text-[25px] font-KOLAK text-body-color py-[20px]">
                 Tools
               </h1>
               <div className="flex justify-start sm:flex-col md:flex-wrap lg:flex-wrap items-center w-[100%] gap-[50px]">
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] h-[150px] text-body-color">
                   <img src={Git} className="w-[40px]" alt="" loading="lazy" />{" "}
                   <span>Git</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] h-[150px] text-body-color">
                   <img
                     src={Github}
                     className="w-[40px]"
@@ -117,11 +117,11 @@ const Skills = () => {
               </div>
             </div>
             <div className="">
-              <h1 className="text-start sm:text-center text-[40px] font-Boldstorm text-body-color py-[20px]">
+              <h1 className="text-start sm:text-center text-[25px] font-KOLAK text-body-color py-[20px]">
                 software
               </h1>
-              <div className="flex justify-start sm:flex-col md:flex-wrap lg:flex-wrap items-center w-[100%] gap-[50px] sm:py-[20px]">
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+              <div className="flex justify-center sm:flex-col md:flex-wrap lg:flex-wrap items-center w-[100%] gap-[50px] sm:py-[20px]">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img
                     src={Vscode}
                     className="w-[40px]"
@@ -130,11 +130,11 @@ const Skills = () => {
                   />{" "}
                   <span>VScode</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img src={Figma} className="w-[40px]" alt="" loading="lazy" />{" "}
                   <span>Figma</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img
                     src={Photoshop}
                     className="w-[40px]"
@@ -143,7 +143,7 @@ const Skills = () => {
                   />{" "}
                   <span>Photoshop</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img
                     src={Illustrator}
                     className="w-[40px]"
@@ -152,7 +152,7 @@ const Skills = () => {
                   />{" "}
                   <span>illustrator</span>
                 </div>
-                <div className="flex  gap-[15px] justify-center items-center border-body-color border-[1px]  p-[10px] w-[150px] text-body-color">
+                <div className="flex  gap-[15px] justify-center items-center flex-col border-body-color border-[1px]  p-[10px] w-[150px] h-[150px] text-body-color">
                   <img src={Xd} className="w-[40px]" alt="" loading="lazy" />{" "}
                   <span>Adobe Xd</span>
                 </div>
